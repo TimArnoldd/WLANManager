@@ -1,9 +1,5 @@
 import * as Location from 'expo-location';
-
-export type Coordinates = {
-  lat: number,
-  lon: number,
-}
+import { Coordinates } from './Coordinates';
 
 export async function requestPermissions() {
   await Location.requestForegroundPermissionsAsync()
